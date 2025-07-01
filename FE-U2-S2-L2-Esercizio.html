@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenzia Viaggi - Sogni di Viaggio</title>
+    <!-- Bootstrap 5 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Abbiamo bisogno di un sito web per un'agenzia di viaggi!
 
@@ -92,8 +100,493 @@ EXTRAS
 17) Crea una funzione che rimuova tutte le "card" dalla pagina
 
 -->
-</head>
+  </head>
 
-<body></body>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="https://img.icons8.com/ios-filled/50/4fc3f7/beach.png"
+            alt="Logo"
+            width="40"
+            height="40"
+            class="me-2"
+          />
+          <span class="fw-bold">Eveline-R</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#saldi">Saldi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#welcome-summer">Welcome Summer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#last-minute">Last Minute</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#recensioni">Recensioni</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Cerca posti da sogno"
+              aria-label="Cerca"
+            />
+            <button class="btn btn-outline-danger" type="submit">Cerca</button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
+    <!-- Hero/Intro -->
+    <section id="home" class="container mb-5">
+      <div class="bg-white rounded-4 p-5 text-center shadow-sm border">
+        <h1 class="mb-2 display-4 fw-light">
+          Eveline-R <span class="fs-5 text-secondary">– Feel the Freedom</span>
+        </h1>
+        <p class="text-secondary fs-5 mb-2">
+          Scopri le destinazioni più calde del momento!
+        </p>
+        <p class="fst-italic mb-4">
+          Scopri le destinazioni dei tuoi sogni e vivi esperienze
+          indimenticabili in tutto il mondo con la nostra agenzia di viaggi.
+        </p>
+        <a href="#" class="btn btn-info text-white fw-bold px-4 py-2"
+          >Prenota ora</a
+        >
+      </div>
+    </section>
+
+    <!-- Sezione Saldi -->
+    <section id="saldi" class="container mb-5">
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <h2 class="mb-0">Saldi</h2>
+        <a href="#" class="text-secondary small">Nascondi sezione</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card border-2 border-info">
+            <img
+              src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=400&q=80"
+              class="card-img-top w-100"
+              style="height: 180px; object-fit: cover"
+              alt="Parigi"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Parigi</h5>
+              <p class="card-text">
+                La città dell'amore, della moda e della Torre Eiffel.
+              </p>
+              <a href="#" class="btn btn-info text-white">Prenota</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card border-2 border-info">
+            <img
+              src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+              class="card-img-top w-100"
+              style="height: 180px; object-fit: cover"
+              alt="New York"
+            />
+            <div class="card-body">
+              <h5 class="card-title">New York</h5>
+              <p class="card-text">
+                La città che non dorme mai, tra grattacieli e Central Park.
+              </p>
+              <a href="#" class="btn btn-info text-white">Prenota</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card border-2 border-info">
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+              class="card-img-top w-100"
+              style="height: 180px; object-fit: cover"
+              alt="Tokyo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tokyo</h5>
+              <p class="card-text">
+                Tradizione e modernità nella metropoli del Sol Levante.
+              </p>
+              <a href="#" class="btn btn-info text-white">Prenota</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card border-2 border-info">
+            <img
+              src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=400&q=80"
+              class="card-img-top w-100"
+              style="height: 180px; object-fit: cover"
+              alt="Roma"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Roma</h5>
+              <p class="card-text">
+                La Città Eterna, tra storia, arte e cucina unica.
+              </p>
+              <a href="#" class="btn btn-info text-white">Prenota</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Welcome Summer -->
+    <section id="welcome-summer" class="container mb-5">
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <h2 class="mb-0">Welcome Summer</h2>
+        <a href="#" class="text-secondary small">Nascondi sezione</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card shadow-lg position-relative">
+            <span class="badge bg-danger position-absolute top-0 end-0 m-2"
+              >HOT</span
+            >
+            <img
+              src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=400&q=80"
+              class="card-img-top w-100"
+              style="height: 180px; object-fit: cover"
+              alt="Santorini"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Santorini</h5>
+              <p class="card-text">
+                Case bianche e tramonti mozzafiato sulle isole greche.
+              </p>
+              <a href="#" class="btn btn-info text-white">Prenota</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card shadow-lg position-relative">
+            <span class="badge bg-danger position-absolute top-0 end-0 m-2"
+              >HOT</span
+            >
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+              class="card-img-top w-100"
+              style="height: 180px; object-fit: cover"
+              alt="Bali"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bali</h5>
+              <p class="card-text">
+                Spiagge paradisiache e cultura millenaria in Indonesia.
+              </p>
+              <a href="#" class="btn btn-info text-white">Prenota</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card shadow-lg position-relative">
+            <span class="badge bg-danger position-absolute top-0 end-0 m-2"
+              >HOT</span
+            >
+            <img
+              src="https://images.unsplash.com/photo-1465156799763-2c087c332922?auto=format&fit=crop&w=400&q=80"
+              class="card-img-top w-100"
+              style="height: 180px; object-fit: cover"
+              alt="Barcellona"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Barcellona</h5>
+              <p class="card-text">
+                Arte, movida e spiagge nella capitale catalana.
+              </p>
+              <a href="#" class="btn btn-info text-white">Prenota</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card shadow-lg position-relative">
+            <span class="badge bg-danger position-absolute top-0 end-0 m-2"
+              >HOT</span
+            >
+            <img
+              src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80"
+              class="card-img-top w-100"
+              style="height: 180px; object-fit: cover"
+              alt="Miami"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Miami</h5>
+              <p class="card-text">Sole, mare e vita notturna in Florida.</p>
+              <a href="#" class="btn btn-info text-white">Prenota</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card shadow-lg position-relative">
+            <span class="badge bg-danger position-absolute top-0 end-0 m-2"
+              >HOT</span
+            >
+            <img
+              src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?auto=format&fit=crop&w=400&q=80"
+              class="card-img-top w-100"
+              style="height: 180px; object-fit: cover"
+              alt="Dubai"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Dubai</h5>
+              <p class="card-text">
+                Lusso, grattacieli e deserto negli Emirati Arabi.
+              </p>
+              <a href="#" class="btn btn-info text-white">Prenota</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card shadow-lg position-relative">
+            <span class="badge bg-danger position-absolute top-0 end-0 m-2"
+              >HOT</span
+            >
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+              class="card-img-top w-100"
+              style="height: 180px; object-fit: cover"
+              alt="Sydney"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sydney</h5>
+              <p class="card-text">Opera House, surf e natura in Australia.</p>
+              <a href="#" class="btn btn-info text-white">Prenota</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Offerta del giorno -->
+    <section id="offerta" class="container mb-5 d-none d-md-block">
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <h2 class="mb-0">Offerta del giorno</h2>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <img
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+            class="img-fluid rounded-4 shadow-sm w-100"
+            style="height: 320px; object-fit: cover"
+            alt="Bora Bora"
+          />
+        </div>
+        <div class="col-md-4">
+          <h3 class="display-6">Bora Bora</h3>
+          <div class="text-secondary mb-1">10.09.2024 - 24.09.2024</div>
+          <div class="lead mb-2">Resort di lusso a partire da 2.000 €</div>
+          <span class="badge bg-dark">Best offer</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Last Minute -->
+    <section id="last-minute" class="container mb-5">
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <h2 class="mb-0">Last Minute</h2>
+        <a href="#" class="text-secondary small">Nascondi sezione</a>
+      </div>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-2">
+          <img
+            src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=400&q=80"
+            class="img-fluid rounded-3 shadow w-100"
+            style="height: 100px; object-fit: cover"
+            alt="Londra"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <img
+            src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+            class="img-fluid rounded-3 shadow w-100"
+            style="height: 100px; object-fit: cover"
+            alt="Praga"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <img
+            src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=400&q=80"
+            class="img-fluid rounded-3 shadow w-100"
+            style="height: 100px; object-fit: cover"
+            alt="Marrakech"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <img
+            src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=400&q=80"
+            class="img-fluid rounded-3 shadow w-100"
+            style="height: 100px; object-fit: cover"
+            alt="Lisbona"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <img
+            src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80"
+            class="img-fluid rounded-3 shadow w-100"
+            style="height: 100px; object-fit: cover"
+            alt="Amsterdam"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <img
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+            class="img-fluid rounded-3 shadow w-100"
+            style="height: 100px; object-fit: cover"
+            alt="Vienna"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Recensioni -->
+    <section id="recensioni" class="container mb-5">
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <h2 class="mb-0">Dicono di noi</h2>
+      </div>
+      <div class="row g-3">
+        <div class="col-12">
+          <div class="d-flex align-items-start mb-3">
+            <img
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              class="rounded-circle border border-2 border-info me-3"
+              width="48"
+              height="48"
+              alt="Luca Bianchi"
+            />
+            <div>
+              <span class="fw-bold">Luca Bianchi</span>
+              <p class="mb-0 text-secondary small">
+                Viaggio a New York perfetto! Organizzazione impeccabile e
+                assistenza continua. Consigliatissimi!
+              </p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start mb-3">
+            <img
+              src="https://randomuser.me/api/portraits/women/44.jpg"
+              class="rounded-circle border border-2 border-info me-3"
+              width="48"
+              height="48"
+              alt="Giulia Rossi"
+            />
+            <div>
+              <span class="fw-bold">Giulia Rossi</span>
+              <p class="mb-0 text-secondary small">
+                Santorini è stata una favola, grazie a voi per aver reso tutto
+                semplice e magico!
+              </p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start mb-3">
+            <img
+              src="https://randomuser.me/api/portraits/men/33.jpg"
+              class="rounded-circle border border-2 border-info me-3"
+              width="48"
+              height="48"
+              alt="Marco Verdi"
+            />
+            <div>
+              <span class="fw-bold">Marco Verdi</span>
+              <p class="mb-0 text-secondary small">
+                Esperienza indimenticabile a Tokyo, viaggio organizzato nei
+                minimi dettagli. Tornerò sicuramente!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-4 pb-2 mt-5">
+      <div class="container text-center">
+        <button class="btn btn-info text-white fw-bold mb-3" id="contattaciBtn">
+          Contattaci
+        </button>
+        <div class="small">© 2021 Eveline-R LTD. All Rights Reserved.</div>
+      </div>
+    </footer>
+
+    <!-- Bottone Conta Viaggi e Rimuovi Card -->
+    <div class="container my-4 d-flex gap-2">
+      <button id="countTripsBtn" class="btn btn-outline-primary">
+        Conta viaggi
+      </button>
+      <button id="removeCardsBtn" class="btn btn-outline-danger">
+        Rimuovi tutte le card
+      </button>
+    </div>
+
+    <!-- Modale Contattaci -->
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Contattaci</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="contactForm">
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInput"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="messageInput" class="form-label">Messaggio</label>
+                <textarea
+                  class="form-control"
+                  id="messageInput"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-info text-white">
+                Invia
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
