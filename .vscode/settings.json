@@ -1,0 +1,8 @@
+{
+  "liveSassCompile.settings.excludeList": [
+    "/bootstrap/**",
+    "/bootstrap-5.3.7/**",
+    "/site/**",
+    "/bootstrap-5.3.7/site/**"
+  ]
+}

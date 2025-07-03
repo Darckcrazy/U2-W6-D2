@@ -1,0 +1,89 @@
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+
+// Font size estesi
+$font-sizes: (
+  1: 2.5rem,
+  2: 2rem,
+  3: 1.75rem,
+  4: 1.5rem,
+  5: 1.25rem,
+  6: 1rem,
+  7: 0.85rem,
+  8: 0.75rem,
+  9: 0.65rem,
+  10: 0.55rem,
+);
+
+// Border width estesi
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+  6: 6px,
+  7: 7px,
+  8: 8px,
+  9: 9px,
+  10: 10px,
+);
+
+// Padding bottoni
+$btn-padding-y: 0.75rem;
+$btn-padding-x: 2.5rem;
+
+// Gutter
+$spacer: 0.5rem;
+$grid-gutter-width: 0.5rem;
+
+// Card
+$card-bg: $dark;
+$card-color: $info;
+$card-border-radius: 2rem;
+
+// Colori tema
+$danger: #ff0077;
+$info: #00ffea;
+$light: #f3eeff;
+
+// Border-radius pill
+$badge-border-radius: 10rem;
+$input-border-radius: 10rem;
+$btn-border-radius: 10rem;
+
+// Colori EPICODE (merge con quelli esistenti)
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "epicode-1": #5726c3,
+    "epicode-2": #8625a5,
+    "epicode-3": #cb2376,
+  )
+);
+
+// Breakpoint 3xl e 4xl (merge con quelli esistenti)
+$grid-breakpoints: map-merge(
+  $grid-breakpoints,
+  (
+    3xl: 1600px,
+    4xl: 1800px,
+  )
+);
+$container-max-widths: map-merge(
+  $container-max-widths,
+  (
+    3xl: 1520px,
+    4xl: 1720px,
+  )
+);
+
+// Sfondo pagina bianco puro
+body {
+  background-color: #fff !important;
+}
+
+// Card: bordo info come il testo
+.card {
+  border-color: $info !important;
+}
